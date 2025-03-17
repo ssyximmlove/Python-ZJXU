@@ -1,6 +1,5 @@
 import random
 
-
 def task5():
     times = int(input())
     hits = 0
