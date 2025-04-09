@@ -46,5 +46,9 @@ while True:
     # 选择合适的信息进行回复
     conn.sendall(words.get(key, 'Sorry.').encode())
 
+    if key == 'bye':
+        conn.sendall("Bye".encode())
+        break
+
 conn.close()
 s.close()

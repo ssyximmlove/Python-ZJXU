@@ -18,7 +18,7 @@ while True:
     # 发送数据
     s.sendall(c.encode())
     # 从服务端接收数据
-    data = s.recv(1024)
+    data = s.recv(4096)
     data = data.decode()
     print(f'Received: {data}')
     if c.lower() == 'bye':
